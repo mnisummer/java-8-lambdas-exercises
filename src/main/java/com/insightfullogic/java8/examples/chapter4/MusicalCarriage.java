@@ -1,8 +1,7 @@
 package com.insightfullogic.java8.examples.chapter4;
 
 // BEGIN body
-public class MusicalCarriage
-        implements Carriage, Jukebox {
+public class MusicalCarriage implements Carriage, Jukebox {
 
     @Override
     public String rock() {

@@ -16,7 +16,6 @@ public class GeneratingStreams {
 
     static void iterate() {
         Stream.iterate(0, x -> x + 1)
-
               .limit(5)
               .forEach(System.out::println);
     }

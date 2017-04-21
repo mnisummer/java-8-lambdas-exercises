@@ -18,8 +18,6 @@ public class StreamExercisesTest {
         assertEquals(4, countBandMembersExternal(Arrays.asList(SampleData.johnColtrane, SampleData.theBeatles)));
     }
 
-
-
     @Test
     public void mapExample() {
         Stream<Integer> stream = Stream.of(1, 2, 3);
