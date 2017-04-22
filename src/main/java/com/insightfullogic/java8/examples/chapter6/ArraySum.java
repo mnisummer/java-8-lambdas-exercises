@@ -40,24 +40,27 @@ public class ArraySum {
                           .collect(toList());
     }
 
+    // 例6-1　串行化计算专辑曲目长度
     @GenerateMicroBenchmark
     // BEGIN serial
-public int serialArraySum() {
-    return albums.stream()
-                 .flatMap(Album::getTracks)
-                 .mapToInt(Track::getLength)
-                 .sum();
-}
+	public int serialArraySum() {
+	    return albums.stream()
+	                 .flatMap(Album::getTracks)
+	                 .mapToInt(Track::getLength)
+	                 .sum();
+	}
     // END serial
 
+    // 例6-2　并行化计算专辑曲目长度
     @GenerateMicroBenchmark
     // BEGIN parallel
-public int parallelArraySum() {
-    return albums.parallelStream()
-                 .flatMap(Album::getTracks)
-                 .mapToInt(Track::getLength)
-                 .sum();
-}
+	public int parallelArraySum() {
+    	// 调用parallelStream 方法即能并行处理
+	    return albums.parallelStream()
+	                 .flatMap(Album::getTracks)
+	                 .mapToInt(Track::getLength)
+	                 .sum();
+	}
     // END parallel
     
 }

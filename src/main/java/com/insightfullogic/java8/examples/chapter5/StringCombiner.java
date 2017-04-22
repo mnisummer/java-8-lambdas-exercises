@@ -14,6 +14,7 @@ public class StringCombiner {
         this.buIlder = new StringBuilder();
     }
 
+    // 例5-21　add 方法返回连接新元素后的结果
     // BEGIN add
     public StringCombiner add (String word) {
         if(!this.areAtStart()) {
@@ -25,6 +26,7 @@ public class StringCombiner {
     }
     // END add
 
+    // 例5-22　merge 方法连接两个StringCombiner 对象
     // BEGIN merge
     public StringCombiner merge (StringCombiner other) {
         if(!other.equals(this)) {
