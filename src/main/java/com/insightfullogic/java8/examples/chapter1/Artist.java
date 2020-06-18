@@ -14,7 +14,8 @@ import java.util.stream.Stream;
 import static java.util.stream.Collectors.toList;
 
 /**
- * Domain class for a popular music artist.
+ * 可能是一个人或是一个组合
+ * <p>Domain class for a popular music artist.
  * 
  * @author Richard Warburton
  */

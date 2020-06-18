@@ -8,17 +8,21 @@ import static java.util.Arrays.asList;
 
 public class SampleData {
 
+	//1个人
     public static final Artist johnColtrane = new Artist("John Coltrane", "US");
 
+	//4个人
     public static final Artist johnLennon = new Artist("John Lennon", "UK");
     public static final Artist paulMcCartney = new Artist("Paul McCartney", "UK");
     public static final Artist georgeHarrison = new Artist("George Harrison", "UK");
     public static final Artist ringoStarr = new Artist("Ringo Starr", "UK");
 
+    //4个人组成一个组合
     public static final List<Artist> membersOfTheBeatles = Arrays.asList(johnLennon, paulMcCartney, georgeHarrison, ringoStarr);
 
     public static final Artist theBeatles = new Artist("The Beatles", membersOfTheBeatles, "UK");
 
+    //专辑
     public static final Album aLoveSupreme = new Album("A Love Supreme", asList(new Track("Acknowledgement", 467), new Track("Resolution", 442)), asList(johnColtrane));
 
     public static final Album sampleShortAlbum = new Album("sample Short Album", asList(new Track("short track", 30)), asList(johnColtrane));
